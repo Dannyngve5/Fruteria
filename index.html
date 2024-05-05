@@ -21,7 +21,7 @@
                     <ul class="nav-elements">
                         <li><a href="#productos">Productos</a></li>
                         <li><a href="#nostros">Nosotros</a></li>
-                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#blog">Contáctanos</a></li>
                     </ul>
                     <div class="cart-container">
                         <a href="www.google.com">
@@ -44,69 +44,144 @@
     </header>
 
     <main>
-        <section id="como-comprar">            
-            <h2>Comprar nunca había sido tan fácil<h2>
-            <div>
-                <h5>Explora nuestro catálogo</h5>
-                <p></p>
-            </div>
-            <div>
-                <h5>Selecciona tus frutas favoritas</h5>
-                <p></p>
-            </div>
-            <div>
-                <h5>Finaliza tu compra</h5>
-                <p></p>
-            </div>    
+        <section id="how-to-buy" style="background-image: url('assets/images/howToBuy.jpg');">  
+            <div class="how-to-buy-container">
+                <h2>Comprar nunca había sido tan fácil<h2>
+                <div>
+                    <h5>Explora nuestro catálogo</h5>
+                    <p></p>
+                </div>
+                <div>
+                    <h5>Selecciona tus frutas favoritas</h5>
+                    <p></p>
+                </div>
+                <div>
+                    <h5>Finaliza tu compra</h5>
+                    <p></p>
+                </div>    
+            </div>            
         </section>
 
         <section id="productos">
-            <div class="intro-productos">
-                <h2>Nuestros productos</h2>
-                <p>Salud al alcance de tu bolsillo</p>
+            <div class="container">
+                <div class="intro-productos">
+                    <h2>Nuestros productos</h2>
+                    <p>Salud al alcance de tu bolsillo</p>
+                </div>
+            
+                <ul class="lista-productos">
+                    <li class="producto">
+                        <img src="assets/images/" alt="Zucchini Verde">
+                        <p>Zucchini Verde (Unidad)</p>
+                        <p>$1,500</p>
+                        <input type="number" value="0">
+                        <button>Añadir al carrito</button>
+                    </li>
+                    <li class="producto">
+                        <img src="assets/images/" alt="Bananas">
+                        <p>Bananas (Unidad)</p>
+                        <p>$1,500</p>
+                        <input type="number" value="0">
+                        <button>Añadir al carrito</button>
+                    </li>
+                    <!-- Añadir mas productos -->
+                </ul>
             </div>
-        
-            <ul class="lista-productos">
-                <li class="producto">
-                    <img src="assets/images/" alt="Zucchini Verde">
-                    <p>Zucchini Verde (Unidad)</p>
-                    <p>$1,500</p>
-                    <input type="number" value="0">
-                    <button>Añadir al carrito</button>
-                </li>
-                <li class="producto">
-                    <img src="assets/images/" alt="Bananas">
-                    <p>Bananas (Unidad)</p>
-                    <p>$1,500</p>
-                    <input type="number" value="0">
-                    <button>Añadir al carrito</button>
-                </li>
-                <!-- Añadir mas productos -->
-            </ul>
         </section>
 
 
         <section class="importancia">
-            <h2>¿Por qué debemos comer frutas?</h2>
+            <div class="container">
+                <h2>¿Por qué debemos comer frutas?</h2>
             <p>Las frutas son esenciales para una dieta saludable, aportan vitaminas, minerales y fibra.</p>
+            </div>
+            
+        </section>
+
+        <section class="location" id="location">
+            <div class="container">
+                <h3>Ubicación</h3>
+                <div class="address">
+                    <h4>Dirección</h4>
+                    <p class="street">Av. Vía Adolfo López Mateos 71, Santiago Occipaco, 53250 Naucalpan de Juárez, Méx., México</p>
+                    <p class="phone"></p>
+                    <p class="email"></p>
+                </div>
+                <div class="schedule">
+                    <h4>Horarios</h4>
+                    <p class="week">Lunes a Viernes <br>8:00 am - 9:00 pm</p>
+                    <p class="weekend">Sábado, Domingo y Festivos <br>10:00 am - 6:00 pm</p>
+                </div>
+            </div>
+
+            
+
+            <section class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107260.2112584803!2d-99.35663666533728!3d19.44004880745744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d20315b552b255%3A0xfd0e51cf85aebd3b!2sFruter%C3%ADa%20El%20Tepeyac!5e0!3m2!1ses!2sco!4v1714895531278!5m2!1ses!2sco" width="1600" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </section>
+
+        <section class="contact-us" id="contact-us">
+            <div class="container contact-container">
+                <div class="box-info">
+                    <h2>CONTÁCTATE CON NOSTROS</h2>
+                    <div class="data">
+                        <p><i class="fa-solid fa-phone"></i>+52 1 7321196546 </p>
+                        <p><i class="fa-solid fa-envelope"></i>fruteria10hermanos@gmail.com</p>
+                        <p><i class="fa-solid fa-location-dot"></i>Ciudad de México</p>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <form action="">
+                    <div class="input-box">
+                        <input type="text" required placeholder="Nombre y apellido">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" required placeholder="Correo electrónico">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" required placeholder="Asunto">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </div>
+                    <div class="input-box">
+                       <textarea name="" id="" cols="30" rows="10" placeholder="Digita tu mensaje"></textarea>
+                    </div>
+                    <button type="submit">Enviar mensaje</button>
+                </form>
+
+            </div>
+
+            
         </section>
 
         <section id="faq">
-            <div>
-                <h2>Preguntas Frecuentes</h2>
-                <p>Por si te lo preguntaste</p>
-            </div>
-            <div>
+            <div class="container">
                 <div>
-                    <i></i>
+                    <h2>Preguntas Frecuentes</h2>
+                    <p>Por si te lo preguntaste</p>
                 </div>
                 <div>
-                    <h3>Tiempos de entrega</h3>
-                    <p>Si realizas tu pedido ahora, te llega ayer</p>
+                    <div>
+                        <i></i>
+                    </div>
+                    <div>
+                        <h3>Tiempos de entrega</h3>
+                        <p>Si realizas tu pedido ahora, te llega ayer</p>
+                    </div>
                 </div>
+                <!-- Mas preguntas -->
             </div>
-            <!-- Mas preguntas -->
-        </section>        
+        </section>       
+        
+
     </main>
 
     <footer>
