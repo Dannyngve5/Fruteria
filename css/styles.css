@@ -187,6 +187,7 @@ nav .logo img {
     overflow: hidden;
     background-position: center;
     background-size: cover;
+    
 }
 
 
@@ -210,6 +211,12 @@ nav .logo img {
     z-index: 2;  
     margin-top: 80px;
     font-size: 20px;
+}
+
+/* Section 2 productos */
+
+#products {
+    scroll-margin-top: 70px;
 }
 
 /* Section 3 importancia */
@@ -277,6 +284,10 @@ nav .logo img {
 
 
 /* Contact us section */
+
+#contact-us {
+    scroll-margin-top: 70px;
+}
 
 .contact-us {
     display: flex;
