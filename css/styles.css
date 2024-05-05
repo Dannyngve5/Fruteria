@@ -267,9 +267,7 @@ nav .logo img {
 
 
 @media (max-width: 505px){
-    .container {
-        padding: 0 10px;
-    }   
+    
 
     .header-content h5 {
         font-size: 12px;
@@ -280,7 +278,7 @@ nav .logo img {
     }
 
     header {
-        height: 80vh;
+        height: 120vh;
     } 
 }
 
