@@ -264,7 +264,7 @@ nav .logo img {
     color: #fff;
     z-index: 2;  
     margin-top: 80px;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .how-to-buy-container {
@@ -322,9 +322,112 @@ nav .logo img {
 
 /* Section 2 productos */
 
+
+
 #products {
     scroll-margin-top: 70px;
+    padding: 50px 0;
 }
+
+.intro-products {
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.intro-products h2 {
+    color: rgb(47, 112, 39);
+    font-size: 40px;
+}
+
+.intro-products p {
+    color: #a3a3a3;
+    font-size: 20px;
+}
+
+
+.list-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.product {
+    text-align: center;
+}
+
+.product img {
+    width: 70%;
+    height: auto;
+}
+
+.product .fruit-name{
+    color:    #6e6d6a ;
+    font-size: 23px;
+    padding: 10px 0;
+}
+
+.product .cost {
+    color:  rgb(10, 137, 110);
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.quantity-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.1);
+    width: 120px; 
+    height: 30px; 
+    margin: 15px auto; 
+    border: 1px solid rgba(0, 0, 0, 0.05); 
+}
+
+.quantity-input span {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+ }
+
+.quantity-input span.num {
+    font-size: 20px;
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.quantity-input span.plus,
+.quantity-input span.minus {
+    cursor: pointer;
+}
+
+.product button {
+    width: 70%;
+    height: 40px;    
+    background-color: rgb(51, 120, 42);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.product button:hover{
+    background-color: rgb(36, 83, 30);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
 
 /* Section 3 importancia */
 
