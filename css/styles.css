@@ -525,7 +525,12 @@ nav .logo img {
     border-radius: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);    
     width: 60%;
+    transition: transform 0.3s ease;
     
+}
+
+.importance-item:hover {
+    transform: scale(1.05);
 }
 
 .importance-item-2{
@@ -877,6 +882,10 @@ form > button:hover,
 
     .nav-elements {
         padding-right: 30px ;
+    }
+
+    .importance-item {
+        width: 100%;
     }
 }
 
