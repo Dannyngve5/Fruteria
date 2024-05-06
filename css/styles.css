@@ -359,7 +359,8 @@ nav .logo img {
 
 .product img {
     width: 70%;
-    height: auto;
+    height: 150px;
+    object-fit: contain;
 }
 
 .product .fruit-name{
@@ -769,7 +770,7 @@ form > button:hover,
     header {
         /* height: 120vh; */
     } 
-    
+
 }
 
 
