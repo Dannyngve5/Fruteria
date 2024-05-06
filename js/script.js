@@ -1,32 +1,61 @@
 document.addEventListener('DOMContentLoaded', function() {
     const hamburguerIcon = document.querySelector('.hamburguer-icon');
     const navElements = document.querySelector('.nav-elements');
-    const navLinks = document.querySelectorAll('.nav-elements a'); // Selección de todos los enlaces dentro del menú
+    const navLinks = document.querySelectorAll('.nav-elements a');
+    const cartElement = document.querySelector('.cart-container a');
+    const cartMenu = document.querySelector('.cart-slideout-menu');
+    const overlayCart = document.querySelector('.overlay-cart');
+    const body = document.querySelector('body');
 
-    // Toggle del menú
-    hamburguerIcon.addEventListener('click', function() {
+    // Función para abrir el menú del carrito
+    cartElement.addEventListener('click', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        cartMenu.style.right = "0";
+        overlayCart.style.display = "block";
+        setTimeout(() => overlayCart.style.opacity = '1', 10);
+    });
+
+    // Función para cerrar el menú del carrito al hacer clic fuera
+    overlayCart.addEventListener('click', function() {
+        cartMenu.style.right = "-100%";
+        overlayCart.style.opacity = '0';
+        setTimeout(() => overlayCart.style.display = 'none', 300);
+    });
+
+    // Manejo del menú hamburguesa y el carrito en el mismo clic
+    body.addEventListener('click', function() {
+        if (navElements.classList.contains('active')) {
+            navElements.classList.remove('active');
+        }
+    }, true); // True para que se ejecute en la fase de captura y antes del bubbling
+
+    // Prevenir la propagación al hacer clic en el menú del carrito
+    cartMenu.addEventListener('click', function(event) {
+        event.stopPropagation();
+    });
+
+    // Toggle del menú de hamburguesa
+    hamburguerIcon.addEventListener('click', function(event) {
+        event.stopPropagation();
         navElements.classList.toggle('active');
     });
 
-    // Cerrar el menú al hacer clic en un enlace
+    // Cierra el menú y el overlay cuando se hace clic en los enlaces del menú de hamburguesa
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
             if (navElements.classList.contains('active')) {
                 navElements.classList.remove('active');
             }
+            if (cartMenu.style.right === "0") {
+                cartMenu.style.right = "-100%";
+                overlayCart.style.opacity = '0';
+                setTimeout(() => overlayCart.style.display = 'none', 300);
+            }
         });
     });
 
-    // Cerrar el menú si el clic es fuera
-    document.addEventListener('click', function(event) {
-        if (!navElements.contains(event.target) && !hamburguerIcon.contains(event.target)) {
-            if (navElements.classList.contains('active')) {
-                navElements.classList.remove('active');
-            }
-        }
-    });
-
-    // Controladores para los botones de cantidad
+    // Controladores para los botones de cantidad de los productos
     document.querySelectorAll('.plus').forEach((plus, index) => {
         plus.addEventListener('click', () => {
             const num = document.querySelectorAll('.num')[index];

@@ -157,6 +157,32 @@ nav .logo img {
     padding-right: 10px;
 }
 
+/* CARRITO DESPLEGABLE */
+
+.cart-slideout-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    width: 350px;
+    background: #47525E;
+    z-index: 150;
+    transition: right 0.3s ease-in-out;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+}   
+
+.overlay-cart {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 140;
+    transition: opacity 0.3s ease-in-out;
+}
 
 /* MENU DE HAMBURGUESA */
 
@@ -164,8 +190,7 @@ nav .logo img {
     display: none ;
     cursor: pointer;
     font-size: 30px;
-    color: #fff;
-    
+    color: #fff;    
 }
 
 @media (max-width: 930px) {
@@ -433,15 +458,40 @@ nav .logo img {
 /* Section 3 importancia */
 
 .importancia {
-    background: rgb(119, 72, 72);
-    height: 50vh;
+    background: #775848; /* Color más suave que el rojo original para no distraer */
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
 }
+
+.importancia ul {
+    list-style: inside square; /* Estilo de lista para mejorar la legibilidad */
+    padding: 20px;
+}
+
+.importancia li {
+    margin-bottom: 10px; /* Espaciado entre puntos */
+}
+
+.importancia p, .importancia li {
+    font-size: 16px; /* Ajuste para legibilidad */
+    line-height: 1.6; /* Espaciado de línea para mejor lectura */
+}
+
+.importancia h2 {
+    margin-bottom: 20px; /* Espacio antes de la lista */
+}
+
 
 /* Mapa */
 
+#location {
+    scroll-margin-top: 70px;
+}
+
 .location {
     overflow: hidden;
-    background: rgb( 245, 243, 237);
+    background: f4f4f4;
     padding-top: 60px;
     text-align: center;
 }
@@ -682,6 +732,39 @@ form > button:hover,
         font-size: 1.5rem;
     }
 }
+
+/* FAQ SECTION  */
+
+#faq {
+    background: #f4f4f4; /* Un fondo suave para destacar el contenido */
+    padding: 40px 0;
+}
+
+.faq-item {
+    margin-top: 20px;
+    padding: 10px;
+    background: #fff; /* Fondo claro para cada pregunta */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombreado sutil para profundidad */
+}
+
+.faq-item h3 {
+    color: #47525E; /* Un tono oscuro que ayuda a centrar la atención */
+    font-size: 22px; /* Tamaño prominente pero no abrumador */
+}
+
+.faq-item p {
+    font-size: 16px; /* Legibilidad óptima */
+    color: #6e6d6a;
+    line-height: 1.6;
+}
+
+#faq .container {
+    max-width: 800px; /* Limita el ancho para mejorar la lectura */
+    margin: auto;
+    padding: 0 20px;
+}
+
+
 
 
 /* WhatsApp button styles */

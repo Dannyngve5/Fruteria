@@ -21,16 +21,20 @@
                     <div class="hamburguer-icon"><i class="fas fa-bars"></i></div>
                     <ul class="nav-elements">
                         <li><a href="#products">Productos</a></li>
-                        <li><a href="#nostros">Nosotros</a></li>
-                        <li><a href="#contact-us">Contáctanos</a></li>
+                        <li><a href="#location">Ubicación</a></li>
+                        <li><a href="#contact-us">Contáctanos</a></li>  
                     </ul>
                     <div class="cart-container">
-                        <a href="www.google.com">
+                        <a href="">
                             <span class="overlay"></span> <!-- Span vacio para hacer clickeable el contenedor -->
                             <span class="cart-total">$0</span>
                             <i class="fa-solid fa-cart-shopping"></i>
                             <span class="cart-count">0</span>
                         </a>
+                    </div>
+                    <div class="overlay-cart"></div>
+                    <div class="cart-slideout-menu">
+                        <p>No hay items en el carrito</p>
                     </div>
                      
                 </div>                             
@@ -41,32 +45,31 @@
                 <p>Descubre la frescura y calidad de nuestras frutas directamente a tu hogar.</p>
             </div>
         </div>
-       
+        
     </header>
 
     <main>
         <section class="how-to-buy" id="how-to-buy" style="background-image: url('assets/images/howToBuy.jpg');"> 
             <div class="container">
                 <h2>Comprar nunca había sido tan fácil</h2> 
-            <div class="how-to-buy-container container">
-                <div class="buy-element">
-                    <i class="fa-solid fa-magnifying-glass-location"></i>
-                    <h5>Explora nuestro catálogo</h5>
-                    <p>Descubre una amplia variedad de frutas frescas y saludables para cada ocasión. Nuestro catálogo está lleno de opciones deliciosas y nutritivas que seguramente satisfarán tus antojos.</p>
-                </div>
-                <div class="buy-element">
-                    <i class="fa-solid fa-apple-whole"></i>
-                    <h5>Selecciona tus frutas favoritas</h5>
-                    <p>Una vez que hayas explorado nuestro catálogo, selecciona tus frutas favoritas con facilidad. Desde manzanas crujientes hasta jugosas naranjas, tenemos todo lo que necesitas para crear comidas deliciosas y saludables.</p>
-                </div>
-                <div class="buy-element">
-                    <i class="fa-solid fa-cash-register"></i>
-                    <h5>Finaliza tu compra</h5>
-                    <p>Nuestro proceso de compra es rápido y sencillo, para que puedas disfrutar rápidamente de tus deliciosos productos. Simplemente elige tus artículos, completa tu pedido y espera la entrega rápida y conveniente.</p>
-                </div>               
+                <div class="how-to-buy-container">
+                    <div class="buy-element">
+                        <i class="fa-solid fa-magnifying-glass-location"></i>
+                        <h5>Explora nuestro catálogo</h5>
+                        <p>Descubre una amplia variedad de frutas frescas y saludables para cada ocasión. Nuestro catálogo está lleno de opciones deliciosas y nutritivas que seguramente satisfarán tus antojos.</p>
+                    </div>
+                    <div class="buy-element">
+                        <i class="fa-solid fa-apple-whole"></i>
+                        <h5>Selecciona tus frutas favoritas</h5>
+                        <p>Una vez que hayas explorado nuestro catálogo, selecciona tus frutas favoritas con facilidad. Desde manzanas crujientes hasta jugosas naranjas, tenemos todo lo que necesitas para crear comidas deliciosas y saludables.</p>
+                    </div>
+                    <div class="buy-element">
+                        <i class="fa-solid fa-cash-register"></i>
+                        <h5>Finaliza tu compra</h5>
+                        <p>Nuestro proceso de compra es rápido y sencillo, para que puedas disfrutar rápidamente de tus deliciosos productos. Simplemente elige tus artículos, completa tu pedido y espera la entrega rápida y conveniente.</p>
+                    </div>               
+                </div>            
             </div>            
-            </div>
-            
         </section>
 
         <section class="products" id="products">
@@ -215,37 +218,21 @@
             </div>
         </section>
 
-        <script>
-            const plus = document.querySelector(".plus"),
-                  minus = document.querySelector(".minus"),
-                  num = document.querySelector(".num");
-            
-            let cont = 0;
-            
-            plus.addEventListener("click", () => {
-                cont++;
-                cont = (cont < 10) ?  cont : cont;
-                num.innerText = cont;
-                
-            });
-            
-            minus.addEventListener("click", () => {
-                if (cont > 0) {
-                    cont--;
-                    cont = (cont < 10) ? cont : cont;
-                    num.innerText = cont;
-                }
-            });
-            </script>
-            
+                   
 
         <section class="importancia">
             <div class="container">
                 <h2>¿Por qué debemos comer frutas?</h2>
-            <p>Las frutas son esenciales para una dieta saludable, aportan vitaminas, minerales y fibra.</p>
+                <p>Las frutas son esenciales para una dieta saludable, aportan vitaminas, minerales y fibra. Consumir una variedad de frutas puede ayudar a reducir el riesgo de enfermedades crónicas, mejorar la salud digestiva y potenciar el sistema inmunológico. Aquí te explicamos algunos de los beneficios clave:</p>
+                <ul>
+                    <li><strong>Vitaminas y Minerales:</strong> Las frutas son una fuente rica y natural de vitaminas y minerales esenciales que son cruciales para el mantenimiento de tu cuerpo.</li>
+                    <li><strong>Fibra:</strong> Ayuda a mantener un sistema digestivo saludable y puede mejorar los niveles de colesterol.</li>
+                    <li><strong>Prevención de Enfermedades:</strong> El consumo regular de frutas está asociado con un menor riesgo de enfermedades como el cáncer y enfermedades cardíacas.</li>
+                </ul>
+                <p>Incorpora frutas en cada comida para un estilo de vida más saludable y energético.</p>
             </div>
-            
         </section>
+        
 
         <section class="location" id="location">
             <div class="container">
@@ -317,18 +304,25 @@
                     <h2>Preguntas Frecuentes</h2>
                     <p>Por si te lo preguntaste</p>
                 </div>
-                <div>
-                    <div>
-                        <i></i>
-                    </div>
-                    <div>
-                        <h3>Tiempos de entrega</h3>
-                        <p>Si realizas tu pedido ahora, te llega ayer</p>
-                    </div>
+                <div class="faq-item">
+                    <h3>Tiempos de entrega</h3>
+                    <p>Si realizas tu pedido ahora, te llega ayer</p>
                 </div>
-                <!-- Mas preguntas -->
+                <div class="faq-item">
+                    <h3>¿Cómo conservar los productos frescos?</h3>
+                    <p>Explora métodos para mantener tus victuals en condiciones óptimas, asegurando que el sabor y la frescura trasciendan el tiempo.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Métodos de pago</h3>
+                    <p>Aceptamos una variedad de métodos de pago, facilitando tu experiencia de compra.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Beneficios de comer orgánico</h3>
+                    <p>Descubre cómo los productos orgánicos pueden transformar tu salud y bienestar.</p>
+                </div>
             </div>
-        </section>       
+        </section>
+            
         
 
     </main>
