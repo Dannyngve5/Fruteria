@@ -5,6 +5,24 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Jaro';
+    src: url('../assets/fonts/Jaro-Regular-VariableFont_opsz.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Platypi';
+    src: url('../assets/fonts/Platypi-VariableFont_wght.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+
+
+
 html {
     font-size: 16px;
 }
@@ -454,32 +472,74 @@ nav .logo img {
 }
 
 
+/* SEPARATOR */
+
+.separator {
+    text-align: center;
+    background: #37323E;
+    padding: 5px;
+    
+}
+
+.separator p{
+    color: #fff;
+    font-size: 12px;
+    font-family: 'PoetsenOne';
+    letter-spacing: 1px;
+    padding: 2px 0;
+}
 
 /* Section 3 importancia */
 
-.importancia {
-    background: #775848; /* Color más suave que el rojo original para no distraer */
-    color: #fff;
-    padding: 40px 0;
+.importance {
+    position: relative;
+    overflow: hidden;
+    padding: 22px 0;
     text-align: center;
+    width: 100%;
+    background-position: center;
+    background-size: cover;  
 }
 
-.importancia ul {
-    list-style: inside square; /* Estilo de lista para mejorar la legibilidad */
+
+.importance h2 {
+    font-size: 40px;
+    color: #31302f;
+    font-family: 'Platypi';
+}
+
+.importance p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #37323E;
+}
+
+.importance-container {
+    padding: 20px 0;
+}
+
+.importance-item {
     padding: 20px;
+    margin-top: 20px;
+    background: #ebe2d5;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);    
+    width: 60%;
+    
 }
 
-.importancia li {
-    margin-bottom: 10px; /* Espaciado entre puntos */
+.importance-item-2{
+    margin-left: auto;    
 }
 
-.importancia p, .importancia li {
-    font-size: 16px; /* Ajuste para legibilidad */
-    line-height: 1.6; /* Espaciado de línea para mejor lectura */
+.importance-item h3 {
+    padding-bottom: 15px;
+    color: rgb(36, 83, 30);
+    font-family: 'Platypi';
 }
 
-.importancia h2 {
-    margin-bottom: 20px; /* Espacio antes de la lista */
+.importance h2 {
+    margin-bottom: 20px; 
 }
 
 
