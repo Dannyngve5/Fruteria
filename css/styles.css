@@ -755,7 +755,6 @@ form > button:hover,
     }
 }
 
-
 @media (max-width: 505px){
     
 
@@ -770,7 +769,35 @@ form > button:hover,
     header {
         /* height: 120vh; */
     } 
+    
 }
 
 
 
+
+@media (max-width: 460px){
+    
+    .intro-products  {
+        padding-bottom: 40px;
+    }
+    
+    .list-products {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }  
+
+    .product .fruit-name{
+        font-size: 19px;
+    }
+    
+    .product .cost {
+        color:  rgb(10, 137, 110);
+        font-weight: bold;
+        font-size: 16px;
+    
+    }
+
+    .product button {
+        width: 100%;
+        font-size: 12px;
+    }
+}
