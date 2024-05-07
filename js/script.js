@@ -11,14 +11,15 @@ document.addEventListener('DOMContentLoaded', function() {
     cartElement.addEventListener('click', function(event) {
         event.preventDefault();
         event.stopPropagation();
-        cartMenu.style.right = "0";
+        cartMenu.classList.add("show"); 
         overlayCart.style.display = "block";
-        setTimeout(() => overlayCart.style.opacity = '1', 10);
+        cartMenu.style.right = "0";
+        setTimeout(() => overlayCart.style.opacity = '1', 0.1);
     });
 
     // Función para cerrar el menú del carrito al hacer clic fuera
     overlayCart.addEventListener('click', function() {
-        cartMenu.style.right = "-100%";
+        cartMenu.classList.remove("show");
         overlayCart.style.opacity = '0';
         setTimeout(() => overlayCart.style.display = 'none', 300);
     });
