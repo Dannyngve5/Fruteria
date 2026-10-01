@@ -19,6 +19,4 @@ Website for Frutería 10 Hermanos, developed as a modern and responsive web inte
 * HTML5
 * CSS3
 * JavaScript
-* Git
-* GitHub
 
