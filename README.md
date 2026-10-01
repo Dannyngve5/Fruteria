@@ -1,6 +1,6 @@
 # Frutería 10 Hermanos
 
-Website for Frutería 10 Hermanos, developed as a modern and responsive web interface to showcase products, facilitate navigation, and provide an interactive shopping experience.
+A responsive frontend web application for Frutería 10 Hermanos, developed as a modern and responsive web interface to showcase products, facilitate navigation, and provide an interactive shopping experience.
 
 ## Features
 
