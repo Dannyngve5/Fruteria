@@ -1,32 +1,24 @@
 # Frutería 10 Hermanos
 
-Responsive website developed for a fruit store, featuring a product catalog, shopping cart interface, business information, contact channels, and responsive navigation.
-
-[🌐 Live Demo](https://dannyngve5.github.io/Fruteria/)
+Website for Frutería 10 Hermanos, developed as a modern and responsive web interface to showcase products, facilitate navigation, and provide an interactive shopping experience.
 
 ## Features
 
-- Responsive product catalog
-- Product quantity controls
-- Shopping cart interface
-- Responsive navigation menu
-- Store information and opening hours
-- Google Maps integration
-- Contact form
-- FAQ section
-- WhatsApp contact button
+* Responsive design for desktop, tablet, and mobile devices.
+* Responsive navigation with hamburger menu and smooth section navigation.
+* Product catalog with quantity selection and dynamic shopping cart.
+* Shopping cart management, including adding, removing, updating, and clearing products.
+* Automatic item counting and total price calculation.
+* WhatsApp integration for placing orders.
+* Contact form with client-side validation and submission confirmation.
+* Informational sections covering fruit benefits, location, and frequently asked questions.
+* Responsive footer with contact information.
 
 ## Technologies
 
-- HTML5
-- CSS3
-- JavaScript
-- Font Awesome
-- Google Maps
+* HTML5
+* CSS3
+* JavaScript
+* Git
+* GitHub
 
-## Status
-
-Frontend implementation completed. The shopping cart and contact form still require backend integration for complete order and message processing.
-
-
-<!-- Add project screenshots here -->
